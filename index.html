@@ -16,7 +16,7 @@
 		t.src=v;s=b.getElementsByTagName(e)[0];
 		s.parentNode.insertBefore(t,s)}(window, document,'script',
 		'https://connect.facebook.net/en_US/fbevents.js');
-		fbq('init', '1215830592387351');
+		fbq('init', '1085254989665116');
 		fbq('track', 'PageView');
 		</script>
 		<!-- End Meta Pixel Code -->
@@ -151,10 +151,17 @@ window.fetch = function(...args) {
 </script>
 	</head>
 	<body>
-		<noscript><img height="1" width="1" style="display:none"
-		src="https://www.facebook.com/tr?id=1215830592387351&ev=PageView&noscript=1"
-		/></noscript>
-		<div id="root"></div>
-		
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1085254989665116&ev=PageView&noscript=1"
+  /></noscript>
+
+  <div id="root"></div>
+
+  <!-- Botão de CTA com evento Lead -->
+  <a href="https://chk.eduzz.com/974476?a=66428653"
+     onclick="fbq('track', 'Lead'); setTimeout(() => { window.location.href=this.href; }, 300); return false;"
+     style="display:inline-block; padding:16px 28px; background:#007bff; color:#fff; border-radius:8px; text-decoration:none; font-size:20px; font-weight:bold; margin:40px auto; text-align:center;">
+     Quero me inscrever
+  </a>	
 	</body>
 </html>
