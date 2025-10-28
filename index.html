@@ -1,56 +1,214 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cronograma PPMG - Método Comprovado para sua Aprovação</title>
-    <meta name="description" content="Cronograma completo para aprovação na Polícia Penal de Minas Gerais. Mais de 10 anos de experiência e milhares de alunos aprovados." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thalisson Faleiro — Cronogramas Policiais</title>
+    <meta name="description" content="Cronogramas de estudo para PPMG, PMGO e ALEGO. Estude do zero com método, constância e revisão semanal." />
     <meta name="author" content="Thalisson Faleiro" />
 
-    <meta property="og:title" content="Cronograma PPMG - Método Comprovado para sua Aprovação" />
-    <meta property="og:description" content="Cronograma completo para aprovação na Polícia Penal de Minas Gerais com método validado e milhares de aprovações." />
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="Thalisson Faleiro — Cronogramas Policiais" />
+    <meta property="og:description" content="Cronogramas de estudo para PPMG, PMGO e ALEGO. Estude do zero com método, constância e revisão semanal." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:image" content="/assets/og-site.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  <link rel="icon" type="image/png" href="/favicon-20251027.png" />
-  <link rel="shortcut icon" type="image/png" href="/favicon-20251027.png" />
-  <link rel="apple-touch-icon" href="/favicon-20251027.png" />
-    <!-- Google tag (gtag.js) -->
+    <meta name="twitter:title" content="Thalisson Faleiro — Cronogramas Policiais" />
+    <meta name="twitter:description" content="Cronogramas de estudo para PPMG, PMGO e ALEGO. Estude do zero com método, constância e revisão semanal." />
+    <meta name="twitter:image" content="/assets/og-site.jpg" />
+
+    <!-- Favicon (cache-busting 20251027) -->
+    <link rel="icon" href="/favicon-20251027.png" />
+
+    <!-- Tailwind CDN with custom palette -->
+    <script>
+      window.tailwind = window.tailwind || {};
+      window.tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandBlue: '#0A1A2F',
+              brandGold: '#CBA135',
+              brandBlueLight: '#1F6FEB',
+              brandGrey: '#9EA7B8'
+            }
+          }
+        }
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google tag (gtag.js) - preserved -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T0EJZTXBVP"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag(){dataLayer.push(arguments);} 
       gtag('js', new Date());
       gtag('config', 'G-T0EJZTXBVP');
     </script>
 
-    <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code - preserved -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '1085254989665116');
       fbq('track', 'PageView');
     </script>
-    <!-- End Meta Pixel Code -->
-    <script type="module" crossorigin src="/assets/index-CbYes7xV.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DjMGMlf-.css">
   </head>
 
-  <body>
-    <!-- Meta Pixel noscript fallback (must reside in body for valid HTML) -->
+  <body class="bg-white text-slate-900">
+    <!-- Meta Pixel noscript fallback -->
     <noscript>
-      <img height="1" width="1" style="display:none"
-           src="https://www.facebook.com/tr?id=1085254989665116&ev=PageView&noscript=1"/>
+      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1085254989665116&ev=PageView&noscript=1"/>
     </noscript>
-    <div id="root"></div>
+
+    <!-- Header -->
+    <header class="fixed inset-x-0 top-0 z-50 bg-brandBlue/95 backdrop-blur border-b border-white/10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="flex items-center justify-between h-16">
+          <a href="/" class="text-white font-semibold tracking-wide">THALISSON FALEIRO</a>
+          <nav class="hidden md:flex gap-6 text-sm">
+            <a href="#cronogramas" class="text-brandGrey hover:text-white">Cronogramas</a>
+            <a href="#como-funciona" class="text-brandGrey hover:text-white">Como funciona</a>
+            <a href="#links" class="text-brandGrey hover:text-white">Links</a>
+          </nav>
+          <a href="https://wa.me/5562XXXXXXXX?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20quero%20informa%C3%A7%C3%B5es%20dos%20cronogramas" class="ml-4 inline-flex items-center rounded-md bg-brandGold px-4 py-2 text-sm font-medium text-brandBlue hover:opacity-90">Falar no WhatsApp</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="relative bg-brandBlue text-white pt-28 pb-16">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(203,161,53,0.15),transparent_40%),radial-gradient(circle_at_80%_30%,rgba(31,111,235,0.15),transparent_40%)]"></div>
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6">
+          <div class="max-w-2xl">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">Do zero à aprovação</h1>
+            <p class="mt-4 text-brandGrey text-base sm:text-lg">Cronogramas prontos para PPMG, PMGO e ALEGO. Método objetivo, revisões semanais e ajustes conforme o edital.</p>
+            <div class="mt-8 flex flex-col sm:flex-row gap-3">
+              <a href="#cronogramas" class="inline-flex items-center justify-center rounded-md bg-brandGold px-5 py-3 text-brandBlue font-semibold hover:opacity-90">Conhecer os cronogramas</a>
+              <a href="https://wa.me/5562XXXXXXXX?text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20com%20os%20cronogramas" class="inline-flex items-center justify-center rounded-md ring-1 ring-white/40 px-5 py-3 font-semibold hover:bg-white/10">Falar com especialista</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cronogramas -->
+      <section id="cronogramas" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+          <div class="mb-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-brandBlue">Cronogramas</h2>
+            <p class="text-brandGrey mt-2">Escolha o edital e veja como funciona.</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- PPMG -->
+            <a href="/cronogramappmg/" class="group rounded-lg overflow-hidden border border-slate-200 hover:shadow-lg transition">
+              <div class="relative aspect-video bg-slate-100">
+                <img src="/assets/capa-ppmg.jpg" alt="Capa PPMG" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+                <span class="absolute left-3 top-3 text-xs font-semibold bg-green-600 text-white px-2 py-1 rounded">Edital publicado</span>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-brandBlue">PPMG — Polícia Penal de Minas Gerais</h3>
+                <p class="text-sm text-brandGrey mt-1">Roteiro diário com revisões semanais e ajustes por edital.</p>
+                <span class="inline-block mt-3 text-sm font-semibold text-brandBlueLight group-hover:underline">Ver detalhes</span>
+              </div>
+            </a>
+
+            <!-- PMGO -->
+            <a href="/cronogramapmgo/" class="group rounded-lg overflow-hidden border border-slate-200 hover:shadow-lg transition">
+              <div class="relative aspect-video bg-slate-100">
+                <img src="/assets/capa-pmgo.jpg" alt="Capa PMGO" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+                <span class="absolute left-3 top-3 text-xs font-semibold bg-yellow-600 text-white px-2 py-1 rounded">Pré-edital</span>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-brandBlue">PMGO — Polícia Militar de Goiás</h3>
+                <p class="text-sm text-brandGrey mt-1">Prepare-se com constância e foco até a publicação do edital.</p>
+                <span class="inline-block mt-3 text-sm font-semibold text-brandBlueLight group-hover:underline">Ver detalhes</span>
+              </div>
+            </a>
+
+            <!-- ALEGO -->
+            <a href="/cronogramaalego/" class="group rounded-lg overflow-hidden border border-slate-200 hover:shadow-lg transition">
+              <div class="relative aspect-video bg-slate-100">
+                <img src="/assets/capa-alego.jpg" alt="Capa ALEGO" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+                <span class="absolute left-3 top-3 text-xs font-semibold bg-yellow-700 text-white px-2 py-1 rounded">Pré-edital (iminente)</span>
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-brandBlue">ALEGO — Assembleia Legislativa de Goiás</h3>
+                <p class="text-sm text-brandGrey mt-1">Base sólida e revisões para largar na frente no dia 1.</p>
+                <span class="inline-block mt-3 text-sm font-semibold text-brandBlueLight group-hover:underline">Ver detalhes</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Como funciona -->
+      <section id="como-funciona" class="py-16 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+          <div class="mb-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-brandBlue">Como funciona</h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="rounded-lg border border-slate-200 p-6 bg-white">
+              <h3 class="font-semibold text-brandBlue">Roteiro diário</h3>
+              <p class="text-sm text-brandGrey mt-2">Estudo guiado por dia, com prioridade por disciplinas e manutenção de ritmo.</p>
+            </div>
+            <div class="rounded-lg border border-slate-200 p-6 bg-white">
+              <h3 class="font-semibold text-brandBlue">Revisões semanais</h3>
+              <p class="text-sm text-brandGrey mt-2">Ciclos de revisão para consolidar conteúdo e reduzir o esquecimento.</p>
+            </div>
+            <div class="rounded-lg border border-slate-200 p-6 bg-white">
+              <h3 class="font-semibold text-brandBlue">Ajuste por edital</h3>
+              <p class="text-sm text-brandGrey mt-2">Atualizações rápidas após edital/retificações para manter o foco no que importa.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Links úteis -->
+      <section id="links" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+          <div class="mb-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-brandBlue">Links úteis</h2>
+          </div>
+          <ul class="space-y-3">
+            <li>
+              <a class="text-brandBlueLight hover:underline" href="https://wa.me/5562XXXXXXXX?text=Quero%20entrar%20no%20grupo%20de%20estudos">Grupo de Estudos — WhatsApp</a>
+            </li>
+            <li>
+              <a class="text-brandBlueLight hover:underline" href="https://www.youtube.com/@thalissonfaleiro" target="_blank" rel="noopener">Canal no YouTube</a>
+            </li>
+            <li>
+              <a class="text-brandBlueLight hover:underline" href="mailto:contato@thalissonfaleiro.site">Dúvidas por e-mail</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/5562XXXXXXXX" aria-label="WhatsApp" class="fixed bottom-4 right-4 inline-flex items-center justify-center w-12 h-12 rounded-full bg-green-500 text-white shadow-lg hover:scale-105 transition">
+      <!-- WhatsApp icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <path d="M20.52 3.48A11.91 11.91 0 0 0 12.06 0C5.46 0 .12 5.34.12 11.92c0 2.1.54 4.16 1.57 5.98L0 24l6.27-1.64a11.86 11.86 0 0 0 5.8 1.48h.01c6.6 0 11.94-5.34 11.94-11.92 0-3.18-1.24-6.17-3.5-8.44ZM12.07 21.3h-.01a9.4 9.4 0 0 1-4.8-1.3l-.35-.2-3.72.97.99-3.62-.22-.37a9.44 9.44 0 0 1-1.44-5.06c0-5.2 4.24-9.43 9.45-9.43 2.53 0 4.9.98 6.68 2.76a9.37 9.37 0 0 1 2.77 6.67c0 5.2-4.23 9.43-9.45 9.43Zm5.18-7.05c-.28-.14-1.66-.82-1.92-.91-.26-.1-.45-.14-.64.14-.19.27-.73.91-.9 1.1-.17.2-.33.22-.61.08-.28-.14-1.2-.44-2.28-1.4-.84-.75-1.4-1.68-1.57-1.96-.16-.27-.02-.43.12-.57.12-.12.28-.32.43-.48.14-.16.19-.27.28-.46.09-.2.05-.35-.03-.49-.08-.14-.64-1.54-.88-2.1-.23-.56-.46-.48-.64-.49l-.55-.01c-.19 0-.49.07-.75.35-.26.27-1 1-1 2.42 0 1.42 1.02 2.78 1.16 2.97.14.2 2 3.05 4.83 4.28.68.29 1.21.46 1.63.58.69.22 1.32.19 1.82.12.55-.08 1.66-.68 1.89-1.33.23-.65.23-1.2.16-1.33-.06-.14-.25-.22-.53-.36Z"/>
+      </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 py-8 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <nav class="flex gap-4 text-sm">
+          <a href="#cronogramas" class="text-brandGrey hover:text-brandBlue">Cronogramas</a>
+          <a href="#como-funciona" class="text-brandGrey hover:text-brandBlue">Como funciona</a>
+          <a href="#links" class="text-brandGrey hover:text-brandBlue">Links</a>
+        </nav>
+        <p class="text-sm text-brandGrey">© <span id="year"></span> Thalisson Faleiro</p>
+      </div>
+      <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    </footer>
   </body>
 </html>
